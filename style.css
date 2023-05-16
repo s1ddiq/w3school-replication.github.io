@@ -1,0 +1,105 @@
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* #be3144 */
+}
+
+:root {
+    --anchor-fontsize: 1.5rem;
+    --main-white: #f0f0f0;
+    --main-red: #be3144;
+    --main-blue: #45567d;
+    --main-gray: #303841;
+    --secondary-gray: #252839;
+    --secondary-purple: #383d52;
+    --main-font: "Poppins", sans-serif;
+    --main-line-height: 1.4;
+    --color-shadow: #181719;
+    --main-text-color: #ffffff;
+    --main-subtitle-color: rgb(255, 255, 255);
+}
+
+body {
+    background-color: #fff;
+    height: 100vh;
+    font-family: "Open sans", sans-serif;
+}
+
+#navbar {
+    height: 100vh;
+    width: 19vw;
+    background-color: var(--secondary-gray);
+    position: fixed;
+    border-right: 5px solid black;
+}
+
+.navlink {
+    text-decoration: none;
+    font-size: var(--anchor-fontsize);
+    display: block;
+    padding: 20px 50px;
+    background-color: var(--main-white);
+    color: var(--color-shadow);
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.navlink:hover {
+    background-color: rgb(172, 170, 170);
+}
+
+#main-hero {
+    width: 81%;
+    background-color: var(--main-white);
+    float: right;
+    padding: 48px;
+    border-bottom: 5px solid #181719;
+}
+
+#what-is-html h1 {
+    color: var(--color-shadow);
+    font-size: 3rem;
+    padding:  0 32px 0px 32px;
+    transform: translateX(-15px);
+}
+
+#what-is-html p.subtitle {
+    font-size: 1.5rem;
+    color: var(--main-gray);
+    line-height: 2.5;
+    padding: 32px;
+    transform: translateX(-15px);
+}
+
+/* sep */
+
+#main {
+    background-color: var(--main-white);
+    width: 81vw;
+    height: 100vh;
+    float: right;
+    padding: 3em;
+    overflow: hidden;
+}
+
+#main p.subtitle {
+    color: #181719;
+    font-weight: 900;
+    font-size: 36px;
+    padding: 32px;
+}
+
+#main p.description {
+    margin: 0;
+    padding: 2em;
+    font-weight: 600;
+    border-bottom: 1px solid var(--main-white);
+}
+
+#main p.description::first-line {
+    color: #303841;
+    font-size: 1.5rem;
+}
+
